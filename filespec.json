@@ -1,0 +1,98 @@
+{
+  "name": "Explorer Applet Filespec",
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "/src/mockData.json",
+      "purpose": "A centralized collection of nested mock data containing mails, calendars, notes, repos, media, messages, and configurations. Restricts component-level hardcoding."
+    },
+    {
+      "path": "/src/types.ts",
+      "purpose": "Common TypeScript schema declarations, structures, and item interfaces to enforce compile-time verification across files."
+    },
+    {
+      "path": "/src/logic/explorerStore.ts",
+      "purpose": "The central OOP Workspace store managing deep reactive updates, local storage sync, callbacks, and calculating log-exponential volumetric bubble sizing."
+    },
+    {
+      "path": "/src/logic/mailLogic.ts",
+      "purpose": "State-management hooks (active folders, mail item selections, custom mail compose submission, folder archives) to isolate mail workspace logic."
+    },
+    {
+      "path": "/src/logic/mediaLogic.ts",
+      "purpose": "Logic hooks tracking active storage filter selections, custom collection groups, item deletions, and progressive timer states for media migration."
+    },
+    {
+      "path": "/src/logic/messagingLogic.ts",
+      "purpose": "Messaging workspace state machine handling active sub-channel selectors, chats delivery triggers, and custom simulated replies callbacks."
+    },
+    {
+      "path": "/src/logic/githubLogic.ts",
+      "purpose": "GitHub workspace selectors tracking highlighted respositories details, active status tabs, and open or closed issues sorting."
+    },
+    {
+      "path": "/src/logic/dashboardLogic.ts",
+      "purpose": "Interactive controller metrics mapping, active dashboards switching, and dynamic timeframe multiplier adjustments."
+    },
+    {
+      "path": "/src/logic/notesLogic.ts",
+      "purpose": "Pure text scratchpad editors tracking active items, edit buffer inputs, autosaves, matching searches, and deletions."
+    },
+    {
+      "path": "/src/logic/calendarLogic.ts",
+      "purpose": "Calendar logic modeling year/month grid calculators (start days, offsets), details list highlights, and rapid schedule bookings."
+    },
+    {
+      "path": "/src/components/GlassModal.tsx",
+      "purpose": "A highly reusable, glazed frosted visual window implementing spring scaling transitions and blur refraction borders."
+    },
+    {
+      "path": "/src/components/MailWorkspace.tsx",
+      "purpose": "Clean, modular Mail presentation layout with folder sidebar navigation, split screens, and dynamic email compost forms."
+    },
+    {
+      "path": "/src/components/MediaWorkspace.tsx",
+      "purpose": "Beautiful bento multimedia viewer rendering assets list, custom group assignments, and migration status progress bars."
+    },
+    {
+      "path": "/src/components/MessagingWorkspace.tsx",
+      "purpose": "Clean, interactive messaging presentation displaying threads sidebars, user response text fields, and live chat bubbles."
+    },
+    {
+      "path": "/src/components/GithubWorkspace.tsx",
+      "purpose": "Visual representation of connected GitHub profiles rendering repo metadata cards, status tabs, and commits list."
+    },
+    {
+      "path": "/src/components/DashboardWorkspace.tsx",
+      "purpose": "SaaS analytics card layouts hosting responsive line-charts with glow effects powered by Recharts."
+    },
+    {
+      "path": "/src/components/NotesWorkspace.tsx",
+      "purpose": "Searchable offline notepad layout supporting split-panes, autosave-on-edit textareas, and simple item creates."
+    },
+    {
+      "path": "/src/components/CalendarWorkspace.tsx",
+      "purpose": "Responsive grid display modeling dates, daily event badges, highlighted timelines, and custom scheduler inputs."
+    },
+    {
+      "path": "/src/components/AddAppWorkspace.tsx",
+      "purpose": "Credentials selector form allowing custom integrations setup utilizing API Keys and endpoint target URLs."
+    },
+    {
+      "path": "/src/logic/bubbleClasses.ts",
+      "purpose": "Definition of BaseBubble, WorkspaceBubble, and ChildSatelliteBubble classes to fulfill clean, extensible OOP bubble structures."
+    },
+    {
+      "path": "/src/components/BubbleCanvas.tsx",
+      "purpose": "Interactive landing canvas containing ambient space glowing background, relative positionings, and outer child satellite expansion layers."
+    },
+    {
+      "path": "/src/components/BubbleNode.tsx",
+      "purpose": "A modular, draggable, customizable node representing a single application workspace with staggered vibrations, micro-breathing motion, and curved child satellites."
+    },
+    {
+      "path": "/src/App.tsx",
+      "purpose": "Central shell layout holding high-refraction headers, notification tickers, home canvas, and dynamic modal workspace router."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "name": "Explorer Applet Functional Specification",
+  "version": "1.0.0",
+  "functions": [
+    {
+      "name": "getBubbleVolumeSize",
+      "file": "/src/logic/explorerStore.ts",
+      "description": "Calculates volumetric dimensions for home bubble nodes based on active notifications. Integrates a log-exponential distribution formula to normalize visual scaling bounds."
+    },
+    {
+      "name": "addCustomApp",
+      "file": "/src/logic/explorerStore.ts",
+      "description": "Registers a dynamic, user-configured integration app bubble. Saves the credentials (API key, custom endpoint url) to the local model registry."
+    },
+    {
+      "name": "sendMail",
+      "file": "/src/logic/explorerStore.ts",
+      "description": "Spawns a custom work or personal email message payload, pre-pends it to the in-memory array, increments the Mail system notification ticker, and commits to cache."
+    },
+    {
+      "name": "markMailAsRead",
+      "file": "/src/logic/explorerStore.ts",
+      "description": "Locates an active email item by ID, toggles its unread indicator, decrements the workspace notification count, and triggers subscribers."
+    },
+    {
+      "name": "archiveMail",
+      "file": "/src/logic/explorerStore.ts",
+      "description": "Toggles the archived boolean on a selected email to filter it out from mailboxes grids."
+    },
+    {
+      "name": "deleteMediaItem",
+      "file": "/src/logic/explorerStore.ts",
+      "description": "Excludes a multimedia asset from the active collection to permanent delete."
+    },
+    {
+      "name": "migrateMediaSource",
+      "file": "/src/logic/explorerStore.ts",
+      "description": "Toggles item host source flags between 'google-photos' (cloud) and 'local' storage to simulate media transfers."
+    },
+    {
+      "name": "setMediaGroup",
+      "file": "/src/logic/explorerStore.ts",
+      "description": "Updates tag structures of media assets to register them within custom bento dashboard categories."
+    },
+    {
+      "name": "sendChat",
+      "file": "/src/logic/explorerStore.ts",
+      "description": "Appends a participant response string into Slack or WhatsApp conversational histories."
+    },
+    {
+      "name": "addNote",
+      "file": "/src/logic/explorerStore.ts",
+      "description": "Creates an empty note template, updates timestamp strings, and returns index models."
+    },
+    {
+      "name": "updateNote",
+      "file": "/src/logic/explorerStore.ts",
+      "description": "Sets text and subject descriptors on notes, updates timezone tracking data, and saves state."
+    },
+    {
+      "name": "deleteNote",
+      "file": "/src/logic/explorerStore.ts",
+      "description": "Removes a text document from the store list of user scratchpads."
+    },
+    {
+      "name": "addCalendarEvent",
+      "file": "/src/logic/explorerStore.ts",
+      "description": "Schedules a custom event onto target monthly calendars with metadata (time hours, category, durations)."
+    },
+    {
+      "name": "useMailController",
+      "file": "/src/logic/mailLogic.ts",
+      "description": "React controller hook exposing list state tracking, filters, selection, and composition state variables."
+    },
+    {
+      "name": "useMediaController",
+      "file": "/src/logic/mediaLogic.ts",
+      "description": "React controller hook triggering progressive-timer intervals and states to animate simulated media file transfers."
+    },
+    {
+      "name": "useMessagingController",
+      "file": "/src/logic/messagingLogic.ts",
+      "description": "React controller hook exposing chat threads, active chat selectors, and generating auto-replies."
+    },
+    {
+      "name": "useGithubController",
+      "file": "/src/logic/githubLogic.ts",
+      "description": "React controller hook listing active commits, filtering status cards, and keeping list indexes."
+    },
+    {
+      "name": "useDashboardController",
+      "file": "/src/logic/dashboardLogic.ts",
+      "description": "React controller hook computing timeframe filters and adjusting mock visual graphs of databases."
+    },
+    {
+      "name": "useNotesController",
+      "file": "/src/logic/notesLogic.ts",
+      "description": "React controller hook syncing text content with store states on-keypress for reliable edit-saving."
+    },
+    {
+      "name": "useCalendarController",
+      "file": "/src/logic/calendarLogic.ts",
+      "description": "React controller hook outputting month sizes, leap grids, and highlighted event lists."
+    }
+  ]
+}

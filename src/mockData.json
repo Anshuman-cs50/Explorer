@@ -1,0 +1,342 @@
+{
+  "apps": [
+    {
+      "id": "mail",
+      "name": "Work Mail",
+      "category": "mail",
+      "notifications": 12,
+      "color": "from-cyan-500/20 to-blue-500/20",
+      "textColor": "text-cyan-200",
+      "borderColor": "border-cyan-500/40",
+      "icon": "Mail",
+      "children": [
+        {"id": "mail_inbox", "name": "Work Inbox"},
+        {"id": "mail_personal", "name": "Personal mail"}
+      ]
+    },
+    {
+      "id": "media",
+      "name": "Media Center",
+      "category": "media",
+      "notifications": 4,
+      "color": "from-purple-500/20 to-pink-500/20",
+      "textColor": "text-purple-200",
+      "borderColor": "border-purple-500/40",
+      "icon": "Image",
+      "children": [
+        {"id": "media_cloud", "name": "Cloud Storage"},
+        {"id": "media_local", "name": "Local Storage"}
+      ]
+    },
+    {
+      "id": "messaging",
+      "name": "Live Chat",
+      "category": "messaging",
+      "notifications": 8,
+      "color": "from-green-500/20 to-emerald-500/20",
+      "textColor": "text-green-200",
+      "borderColor": "border-green-500/40",
+      "icon": "MessageSquare",
+      "children": [
+        {"id": "msg_slack", "name": "Slack Workspace"},
+        {"id": "msg_whatsapp", "name": "WhatsApp Connect"}
+      ]
+    },
+    {
+      "id": "github",
+      "name": "GitHub Pulse",
+      "category": "github",
+      "notifications": 3,
+      "color": "from-indigo-500/20 to-violet-500/20",
+      "textColor": "text-indigo-200",
+      "borderColor": "border-indigo-500/40",
+      "icon": "Github",
+      "children": [
+        {"id": "git_repos", "name": "Active Repos"},
+        {"id": "git_issues", "name": "Assigned Issues"}
+      ]
+    },
+    {
+      "id": "dashboard",
+      "name": "Metabase Metrics",
+      "category": "dashboard",
+      "notifications": 2,
+      "color": "from-amber-500/20 to-orange-500/20",
+      "textColor": "text-amber-200",
+      "borderColor": "border-amber-500/40",
+      "icon": "BarChart3",
+      "children": [
+        {"id": "dash_saas", "name": "SaaS Growth"},
+        {"id": "dash_finance", "name": "Financials"}
+      ]
+    },
+    {
+      "id": "notes",
+      "name": "Workspace Notes",
+      "category": "notes",
+      "notifications": 0,
+      "color": "from-teal-500/20 to-emerald-500/20",
+      "textColor": "text-teal-200",
+      "borderColor": "border-teal-500/40",
+      "icon": "FileText",
+      "children": [
+        {"id": "note_scratch", "name": "Scratchpad"},
+        {"id": "note_todo", "name": "Action Items"}
+      ]
+    },
+    {
+      "id": "calendar",
+      "name": "Schedule",
+      "category": "calendar",
+      "notifications": 5,
+      "color": "from-rose-500/20 to-red-500/20",
+      "textColor": "text-rose-200",
+      "borderColor": "border-rose-500/40",
+      "icon": "Calendar",
+      "children": [
+        {"id": "cal_week", "name": "Meetings"},
+        {"id": "cal_reminders", "name": "Deadlines"}
+      ]
+    }
+  ],
+  "availableMoreApps": [
+    {
+      "id": "fitbit",
+      "name": "Fitbit Sync",
+      "category": "custom",
+      "icon": "Heart",
+      "color": "from-cyan-400/20 to-teal-400/20",
+      "textColor": "text-cyan-200",
+      "borderColor": "border-cyan-400/30",
+      "placeholderUrl": "https://api.fitbit.com/v1/user",
+      "description": "Log daily activities and health tracker stats"
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify Controller",
+      "category": "custom",
+      "icon": "Music",
+      "color": "from-green-400/20 to-emerald-400/20",
+      "textColor": "text-green-200",
+      "borderColor": "border-green-400/30",
+      "placeholderUrl": "https://api.spotify.com/v1/me/player",
+      "description": "Stream musical sessions directly inside Workspace"
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe Receipts",
+      "category": "custom",
+      "icon": "CreditCard",
+      "color": "from-indigo-400/20 to-purple-400/20",
+      "textColor": "text-indigo-200",
+      "borderColor": "border-indigo-400/30",
+      "placeholderUrl": "https://api.stripe.com/v1/charges",
+      "description": "Proxy receipts and capture customer invoice transactions"
+    },
+    {
+      "id": "jira",
+      "name": "Jira Sprint Sync",
+      "category": "custom",
+      "icon": "CheckSquare",
+      "color": "from-blue-400/20 to-blue-600/20",
+      "textColor": "text-blue-200",
+      "borderColor": "border-blue-400/30",
+      "placeholderUrl": "https://your-domain.atlassian.net/rest/api/3",
+      "description": "Integrate company task backlogs and sprint tickets"
+    }
+  ],
+  "emails": [
+    {
+      "id": "mail-1",
+      "sender": "John Miller (Hiring)",
+      "subject": "Candidate Assessment Review",
+      "snippet": "Hello Team, we have reviewed the candidates for the senior architect role...",
+      "body": "Hello Team,\n\nWe have reviewed the candidates for the senior architect role. Please find the feedback attached. Let's make an alignment scheduled on June 15th at 3 PM.\n\nBest,\nJohn",
+      "date": "Jun 12, 11:30 AM",
+      "unread": true,
+      "archived": false,
+      "folder": "work"
+    },
+    {
+      "id": "mail-2",
+      "sender": "GitHub Alerts",
+      "subject": "[Security] Alert for repo explorer",
+      "snippet": "We found some legacy packages outdated in explorer/node_modules...",
+      "body": "Hi there,\n\nOur automated security scanning has detected 2 moderate dependencies requiring update. Please check the security tab for instructions to patch standard Vite configs.\n\nThanks,\nGitHub Security Group",
+      "date": "Jun 12, 10:15 AM",
+      "unread": true,
+      "archived": false,
+      "folder": "work"
+    },
+    {
+      "id": "mail-3",
+      "sender": "Design Newsletter",
+      "subject": "Glassmorphism in 2026: The New Era",
+      "snippet": "Discover the latest trends of high-refraction glass layouts and bubbles...",
+      "body": "Hi Designer,\n\nGlassmorphism is stronger than ever! Refraction layers, high blur, subtle glowing borders, and interactive bubbles are creating highly tactile modern dashboards.\n\nKeep crafting!",
+      "date": "Jun 11, 4:25 PM",
+      "unread": false,
+      "archived": false,
+      "folder": "personal"
+    }
+  ],
+  "multimedia": [
+    {
+      "id": "media-1",
+      "name": "Workspace Design Mock.png",
+      "type": "image",
+      "source": "google-photos",
+      "url": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=400&q=80",
+      "size": "2.4 MB",
+      "group": "Design Drafts"
+    },
+    {
+      "id": "media-2",
+      "name": "Team Building 2026.mp4",
+      "type": "video",
+      "source": "google-photos",
+      "url": "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=400&q=80",
+      "size": "45.1 MB",
+      "group": "Events"
+    },
+    {
+      "id": "media-3",
+      "name": "Landing Background.png",
+      "type": "image",
+      "source": "local",
+      "url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=400&q=80",
+      "size": "1.1 MB",
+      "group": "Assets"
+    },
+    {
+      "id": "media-4",
+      "name": "Presentation Guide.pdf",
+      "type": "image",
+      "source": "local",
+      "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=400&q=80",
+      "size": "5.6 MB",
+      "group": "Documents"
+    }
+  ],
+  "messages": [
+    {
+      "channel": "slack",
+      "contact": "Sarah Connor",
+      "avatar": "SC",
+      "chats": [
+        {"sender": "sarah", "text": "Are we still on for the app metrics review?", "time": "12:15 PM"},
+        {"sender": "me", "text": "Absolutely, just wrapping up the Explorer prototype now.", "time": "12:20 PM"},
+        {"sender": "sarah", "text": "Perfect, let me know when you deploy it!", "time": "12:22 PM"}
+      ]
+    },
+    {
+      "channel": "whatsapp",
+      "contact": "Leo Das",
+      "avatar": "LD",
+      "chats": [
+        {"sender": "leo", "text": "Hey did you see the new media dashboard?", "time": "9:30 AM"},
+        {"sender": "me", "text": "Yes! Got the GPhotos API integration looking perfect.", "time": "9:45 AM"}
+      ]
+    }
+  ],
+  "githubRepos": [
+    {
+      "name": "explorer-app",
+      "description": "Bubble-based glassy workplace unified visual environment",
+      "stars": 42,
+      "forks": 8,
+      "issues": [
+        {"id": "issue-1", "title": "Implement exponential log scaling formulas for volumetric bubble sizing", "author": "milo", "status": "open"},
+        {"id": "issue-2", "title": "In-page workspace credential addition flow validation fails", "author": "anita", "status": "closed"}
+      ],
+      "commits": [
+        {"hash": "e67b2d1", "message": "Refactor bubble canvas to support dynamic child hover logic", "author": "Anshuman", "date": "2 hours ago"},
+        {"hash": "8a31f0c", "message": "Separate front components from state model business logic", "author": "Anshuman", "date": "1 day ago"}
+      ]
+    },
+    {
+      "name": "refraction-engine",
+      "description": "Tailwind utility extensions for realistic glassy refraction components",
+      "stars": 128,
+      "forks": 12,
+      "issues": [
+        {"id": "issue-3", "title": "Backdrop-blur not working in legacy Safari environments", "author": "safari-guy", "status": "open"}
+      ],
+      "commits": [
+        {"hash": "d23fb5f", "message": "Add deep backdrop-blur coefficients inside Tailwind settings", "author": "Anshuman", "date": "3 days ago"}
+      ]
+    }
+  ],
+  "dashboards": [
+    {
+      "id": "dash-1",
+      "title": "SaaS Active Users",
+      "metric": "42,890",
+      "growth": "+12.4%",
+      "chartData": [
+        {"name": "Mon", "value": 3100},
+        {"name": "Tue", "value": 3800},
+        {"name": "Wed", "value": 4200},
+        {"name": "Thu", "value": 4900},
+        {"name": "Fri", "value": 4700},
+        {"name": "Sat", "value": 5200},
+        {"name": "Sun", "value": 5800}
+      ]
+    },
+    {
+      "id": "dash-2",
+      "title": "Revenue (ARR)",
+      "metric": "$2.14M",
+      "growth": "+8.1%",
+      "chartData": [
+        {"name": "Mon", "value": 1800000},
+        {"name": "Tue", "value": 1850000},
+        {"name": "Wed", "value": 1920000},
+        {"name": "Thu", "value": 1990000},
+        {"name": "Fri", "value": 2040000},
+        {"name": "Sat", "value": 2100000},
+        {"name": "Sun", "value": 2140000}
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": "Marketing Pitch",
+      "content": "Explorer is a glassy environment bringing interactive, tactical bubbles. Let users connect third party tools inside one visual space.",
+      "updatedAt": "Jun 12, 12:00 PM"
+    },
+    {
+      "id": "note-2",
+      "title": "Tech Stack Decisions",
+      "content": "1. React 19 as view layer.\n2. TypeScript for strict boundaries.\n3. Lucide icons + Motion spring animations.",
+      "updatedAt": "Jun 11, 6:15 PM"
+    }
+  ],
+  "calendar": [
+    {
+      "id": "cal-1",
+      "title": "Project Alignment",
+      "date": "2026-06-12",
+      "time": "14:00",
+      "duration": "1 hr",
+      "category": "work"
+    },
+    {
+      "id": "cal-2",
+      "title": "Design Sprint Review",
+      "date": "2026-06-15",
+      "time": "15:00",
+      "duration": "1.5 hrs",
+      "category": "work"
+    },
+    {
+      "id": "cal-3",
+      "title": "Weekly Gym Alignment",
+      "date": "2026-06-12",
+      "time": "18:00",
+      "duration": "45 mins",
+      "category": "personal"
+    }
+  ]
+}
